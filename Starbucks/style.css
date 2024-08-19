@@ -1,0 +1,808 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+      scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+      width: 0px;
+      /* Width of the scrollbar */
+}
+
+body::-webkit-scrollbar-thumb {
+      background: #013924;
+      height: 10px;
+}
+
+body::-webkit-scrollbar-button {
+      background-color: #007248;
+}
+
+nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 120px;
+      border-bottom: 4px solid rgb(241, 242, 240);
+}
+
+nav .left img,
+.profile img {
+      width: 40px;
+
+}
+
+nav .right .input img {
+      width: 20px;
+      top: 28px;
+      position: absolute;
+      right: 35.8%;
+}
+
+nav ul {
+      display: flex;
+      gap: 60px;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      padding-left: 34px;
+}
+
+nav ul li a {
+      text-decoration: none;
+      color: rgb(102, 102, 102);
+      font-size: 16px;
+      position: relative;
+      font-weight: 400;
+      transition: all 0.3s ease;
+}
+
+nav ul li a::after {
+      content: "";
+      width: 0;
+      background-color: green;
+      height: 2px;
+      position: absolute;
+      left: 0;
+      bottom: -0.3rem;
+      transition: all 0.4s ease;
+
+}
+
+nav ul li a:hover::after {
+      width: 70%;
+}
+
+nav ul li a:hover {
+      color: rgb(24, 81, 24);
+}
+
+nav .left,
+nav .right {
+      display: flex;
+      gap: 23px;
+      justify-content: center;
+      align-items: center;
+}
+
+nav .right .input,
+.profile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+nav .right .profile {
+      margin-right: 60px;
+
+
+}
+
+nav .right .input input {
+      width: 17vw;
+      height: 35px;
+      font-size: 12px;
+      margin-right: 5vw;
+      border-radius: 34px;
+      border: 1px solid transparent;
+      box-shadow: 0px 2px 2px 2px rgba(188, 187, 187, 0.4);
+      padding: 10px 10px 10px 35px;
+}
+
+.header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 126px;
+      background-color: rgb(13, 43, 13);
+}
+
+.header h2 {
+      font-size: 23px;
+      color: white;
+      font-weight: 300;
+
+}
+
+.header button.btn1 {
+      padding: 10px 20px;
+      border-radius: 34px;
+      border: 1px solid white;
+      outline: none;
+      background: transparent;
+      color: white;
+      margin-right: 50px;
+      cursor: pointer;
+}
+
+.order-1 {
+      display: flex;
+      justify-content: center;
+      gap: 25rem;
+      margin: 20px auto;
+      border-radius: 10px;
+      align-items: center;
+      padding: 20px 0;
+      background-color: #006241;
+      width: 80%;
+}
+
+.order-1 .left {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-left: 100px;
+}
+
+.order-1 h5 {
+      font-size: 14px;
+}
+
+.order-1 h3 {
+      font-size: 25px;
+}
+
+.order-1 .left>p {
+      font-size: 13px;
+}
+
+.order-1 .o-1-price {
+      margin-top: 30px;
+}
+
+.order-1 .o-1-price h6 {
+      font-size: 13px;
+      font-weight: 400;
+}
+
+.order-1 .o-1-price p {
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 3px;
+}
+
+.order-1 .left img {
+      width: 100px;
+      position: absolute;
+      left: 10%;
+      top: 25%;
+
+}
+
+.order-1 .right button.btn2 {
+      padding: 15px 50px;
+      border-radius: 34px;
+      border: none;
+      outline: none;
+      background: #007248;
+      font-size: 13px;
+      color: white;
+      font-weight: 700;
+      cursor: pointer;
+      margin-top: 7rem;
+
+}
+
+.menus {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      margin: 5rem auto;
+      width: 80%;
+      gap: 10px;
+}
+
+.menus .menu-imgs {
+      display: flex;
+      gap: 7.8rem;
+
+}
+
+.menus .menu-imgs img {
+      width: 100px;
+      border-radius: 50%;
+      margin-top: 2rem;
+      cursor: pointer;
+}
+
+.menus .menu-imgs img:hover {
+      border: 2px solid green;
+}
+
+.menus .menu-imgs .centered-text {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      display: flex;
+}
+
+.menus .menu-imgs .centered-text p {
+      font-size: 13px;
+      font-weight: 500;
+      text-align: center;
+}
+
+.menu-2 {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 3rem;
+      background-color: rgb(232, 231, 231);
+      padding: 40px 150px;
+      margin: 3rem auto;
+      overflow: hidden;
+}
+
+
+
+.menu-2 .heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+.menu-2 .heading a {
+      font-size: 14px;
+      text-decoration: none;
+      color: rgb(4, 118, 4);
+      font-weight: bold;
+}
+
+.menu-2 .boxes {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      width: 168.5%;
+      padding-left: 10px;
+
+
+}
+
+.boxes-limit {
+      background-color: transparent;
+      width: 100%;
+      height: 30vh;
+      overflow: scroll;
+      padding: 34px 23px;
+      border-left: 2px solid rgb(204, 204, 204);
+      border-right: 2px solid rgb(204, 204, 204);
+      position: relative;
+      z-index: 100;
+}
+
+.boxes-limit::-webkit-scrollbar {
+      display: none;
+}
+
+.menu-2 .box1 {
+      display: flex;
+      width: 22rem;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      background-color: white;
+      border-radius: 10px;
+}
+
+.menu-2 .box1 .left {
+      display: flex;
+      gap: 8px;
+}
+
+.menu-2 .box1 .left .left-1 p {
+      margin-top: 10px;
+      font-size: 12px;
+      font-weight: bold;
+}
+
+.menu-2 .box1 .left .left-1 p span {
+      font-size: 10px;
+}
+
+.menu-2 .box1 .left .left-2 p.prod-name {
+      font-size: 13px;
+      font-weight: 700;
+      margin-top: 5px;
+}
+
+.menu-2 .box1 .left .left-2 p.prod-bene {
+      font-size: 9px;
+      font-weight: normal;
+      color: gray;
+      margin-top: 5px;
+}
+
+.menu-2 .box1 .left-1 img {
+      width: 90px;
+      height: 90px;
+      object-fit: cover;
+      border-radius: 5px;
+}
+
+.menu-2 .box1 .right button.btn3 {
+      padding: 8px 20px;
+      border-radius: 34px;
+      color: white;
+      font-size: 13px;
+      font-weight: bold;
+      margin-top: 5rem;
+      border: none;
+      outline: none;
+      background-color: #046441;
+      transition: all 0.3s ease;
+      cursor: pointer;
+}
+
+.menu-2 .box1 .right button.btn3:hover {
+      background-color: #013924;
+}
+
+.arrows {
+      display: flex;
+      position: absolute;
+      gap: 82rem;
+      left: 4cap;
+      top: 134vh;
+
+
+}
+
+.arrows .arrow1,
+.arrow2 {
+      width: 50px;
+      height: 50px;
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      border: 2px solid #007248;
+      opacity: 0.5;
+}
+
+.arrows img {
+      width: 30px;
+}
+
+.arrows .arrow1 img {
+      transform: rotate(180deg);
+}
+
+.rightimg img {
+      width: 60px;
+      position: absolute;
+      top: 104.5%;
+      right: 0;
+}
+
+.imgcontainer {
+      width: 100%;
+      background: url('https://preprodtsbstorage.blob.core.windows.net/cms/uploads/ICW_Live_Event_Day5_41f11ca3d2.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 10px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      justify-content: center;
+      align-items: start;
+      border-radius: 10px;
+}
+
+.imgcontainer h6 {
+      background-color: rgb(211, 249, 223);
+      padding: 1px 4px;
+      border-radius: 3px;
+      font-size: 10px;
+      color: rgb(0, 128, 0);
+      margin-bottom: 10rem;
+}
+
+.imgcontainer h1 {
+      color: white;
+      margin-bottom: 7px;
+}
+
+.imgcontainer p {
+      font-size: 15px;
+      color: white;
+      margin-bottom: 34px;
+}
+
+.imgcontainer button.btn4 {
+      padding: 10px 50px;
+      border-radius: 34px;
+      border: none;
+      outline: none;
+      font-size: 13px;
+      font-weight: bold;
+      color: black;
+      background-color: white;
+      margin-bottom: 20px;
+}
+
+footer {
+      background-color: #0e382c;
+      padding: 6rem 8rem 0 8rem;
+
+}
+
+footer .footer-top {
+      display: grid;
+      grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+      justify-content: center;
+      align-items: start;
+      gap: 3rem;
+      margin-bottom: 20px;
+      padding-bottom: 50px;
+      border-bottom: 2px solid gray;
+
+}
+
+.aboutus p,
+.Responsibility p,
+.Quicklinks p {
+      display: flex;
+      
+}
+
+.a-arrow img{
+      display: none;
+      
+}
+
+
+footer .footer-details {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      justify-content: center;
+}
+
+
+footer .footer-details h5 {
+      font-size: 20px;
+      color: white;
+}
+
+footer .footer-details span {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+}
+
+footer .socialmedia img {
+      width: 40px;
+}
+
+footer .socialmedia .icons {
+      gap: 1rem;
+      display: flex;
+}
+
+footer .footer-details p {
+      color: white;
+      font-size: 14px;
+      font-weight: 400s;
+}
+
+footer .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 3rem;
+}
+
+footer .footer-bottom .links {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+}
+
+footer .footer-bottom .links a {
+      text-decoration: none;
+      color: rgb(200, 200, 200);
+      font-size: 13px;
+      border-right: 2px solid gray;
+      padding-right: 20px;
+}
+
+footer .footer-bottom .copyright h6 {
+      font-size: 10px;
+      color: rgb(200, 200, 200);
+
+}
+
+@media screen and (max-width:1280px) {
+      nav ul {
+            padding-left: 0px;
+      }
+
+      nav .right .input input,
+      nav .right .profile {
+            margin-right: 0px;
+      }
+
+      nav .right .input img {
+            right: 28.8%;
+      }
+
+      .order-1 {
+            margin: 30px auto;
+            padding: 27px 0;
+            width: 85%;
+            gap: 13rem;
+      }
+
+      .order-1 .left img {
+            left: 7.5%;
+            top: 26%;
+      }
+
+      .arrows {
+            gap: 71.7rem;
+            left: 1rem;
+            top: 120vh;
+
+      }
+
+      .menus {
+            width: 85%;
+      }
+
+      .menus .menu-imgs {
+            gap: 5.8rem;
+      }
+
+      .menu-2 {
+            padding: 40px 85px;
+      }
+
+      .rightimg img {
+            top: 95.5%;
+      }
+
+      footer .footer-details h5 {
+            font-size: 17px;
+
+      }
+
+      footer .footer-details p {
+            font-size: 11px;
+            font-weight: 400;
+      }
+}
+
+@media screen and (max-width:995px) {
+      nav {
+            padding: 15px 50px;
+      }
+
+      nav ul {
+            gap: 30px;
+      }
+
+      nav .right .input input {
+            width: 22vw;
+      }
+
+      .header button.btn1 {
+            margin-right: 0px;
+      }
+
+      .order-1 {
+            width: 90%;
+            gap: 8rem;
+      }
+
+      .order-1 .left img {
+            left: 5%;
+      }
+
+      .menus {
+            width: 90%;
+      }
+
+      .menu-2 {
+            padding: 50px;
+      }
+
+
+      .menus .menu-imgs {
+            gap: 3.7rem;
+      }
+
+
+      .arrows {
+            gap: 53.8rem;
+            top: 135vh;
+
+      }
+
+      .menu-2 {
+            padding: 40px;
+      }
+
+      nav .right .input img {
+            right: 30.3%;
+      }
+
+      footer {
+            padding: 2rem 1rem;
+      }
+
+}
+
+@media screen and (max-width:431px) {
+      nav {
+            width: 100%;
+            flex-direction: column;
+            gap: 2rem;
+      }
+
+      nav .left {
+            flex-direction: column;
+      }
+
+      nav .right .input input {
+            width: 50vw;
+      }
+
+      nav .right .input img {
+            right: 75.5%;
+            top: 15.5vh;
+      }
+
+      nav ul {
+            gap: 30px;
+      }
+
+      .header {
+            padding: 20px;
+      }
+
+
+      .menus .menu-imgs {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 2.7rem;
+      }
+
+      .menu-2 {
+            padding: 40px;
+            margin: 10px;
+      }
+
+      .order-1 {
+            width: 90%;
+            gap: 0px;
+            margin: 10px auto;
+      }
+
+      .order-1 h3 {
+            font-size: 20px;
+      }
+
+      .order-1 .left>p {
+            font-size: 12px;
+            width: 171%;
+      }
+
+      .arrows {
+            display: none;
+            gap: 18.7rem;
+            top: 163vh;
+
+      }
+
+      footer .footer-top {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 23px;
+      }
+
+      .aboutus p,
+      .Responsibility p,
+      .Quicklinks p {
+            display: none;
+            padding-top: 23px;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+            transition: all 0.3s ease;
+      }
+
+      footer .footer-details {
+
+            gap: 0px;
+      }
+
+      footer .socialmedia {
+            gap: 23px;
+      }
+
+      footer .downloads {
+            gap: 23px;
+
+      }
+
+      footer .footer-bottom .links {
+            display: flex;
+            flex-direction: column;
+            gap: 27px;
+            justify-content: center;
+            align-items: normal;
+      }
+
+      .footer-bottom .copyright {
+            margin-top: 130px;
+      }
+
+      .rightimg img {
+            display: none;
+      }
+
+
+      .aboutus,
+      .Responsibility,
+      .Quicklinks {
+            width: 100%;
+            padding-bottom: 10px;
+            border-bottom: 2px solid white;
+      }
+
+
+
+
+      .order-1 .left img {
+            left: 5%;
+            top: 20rem;
+      }
+
+      .order-1 .right button.btn2 {
+            margin-top: 9rem;
+            margin-right: 1rem;
+      }
+
+      .a-arrow {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+      }
+
+      .a-arrow img{
+            display: block;
+      }
+
+
+
+
+}
